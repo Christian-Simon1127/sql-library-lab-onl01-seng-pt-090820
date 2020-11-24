@@ -16,7 +16,7 @@ def select_name_and_series_subgenres_of_authors
 end
 
 def select_series_title_with_most_human_characters
-  "SELECT series.title from series JOIN "
+  "SELECT series.title from series JOIN books ON series.id = books.id JOIN character_books ON series join characters"
 end
 
 def select_character_names_and_number_of_books_they_are_in
